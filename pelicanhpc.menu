@@ -1,0 +1,8 @@
+LABEL PELICANHPC
+MENU LABEL ^PelicanHPC Live 2.8
+KERNEL er/plugins/pelicanhpc/vmlinuz
+INITRD er/plugins/pelicanhpc/initrd.img
+APPEND boot=live config noautologin noxautologin quickreboot hostname=pelican netboot=nfs nfsroot=10.0.0.1:/tftpboot/er/shares/pelicanhpc/ ramdisk_size=200000 nolock
+TEXT HELP
+                 PelicanHPC Live.
+ENDTEXT
